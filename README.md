@@ -3,5 +3,6 @@ Semantic segmentation mask >> get individual masks >> get curve control points f
 
 # To run
 python get_bezier.py <RGB semantic segmentation mask> <output folder> <algorithm> <slope thresold if <algorithm is 1>>
+<br>
 e.g. python get_bezier.py test1/roto-12.png masks/roto-lr-12/ 1 25
 
