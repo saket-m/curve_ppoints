@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><script>from myeNutils import *
+import _curveknob
+
+mask_dir = '/home/saket/vision/semantic-segmentation/experiments/masks/0000/'
+mask_num = 234
+
+r = get_Read(mask_dir + 'mask' + str(mask_num) + '.png')
+get_spline(roto_node_name='Roto1', mask_dir=mask_dir+'strokes'+str(mask_num)+'.bezier')
+
+toolbar = nuke.menu( 'Nodes' )
+m = toolbar.addMenu('Myelin Spline')
+m.addCommand( 'Myelin/Roto', &quot;get_spline(roto_node_name='Roto1', mask_dir=mask_dir, mask_num=mask_num)&quot;, 'a')
+
+filePath = nuke.getFilename('Choose Bezier file', '*.bezier')
+print(filePath)
+</script>
