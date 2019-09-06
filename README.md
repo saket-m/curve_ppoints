@@ -13,7 +13,7 @@ e.g. python gen_spline.py masks/anand/mask200.png  200 25
 <br><br>
 # Hyper-parameters
 <table>
-  <tr><th>resolution</th><th>angle thresold</th><tr>good on</tr><th>upscaled</th></tr>
+  <tr><th>resolution</th><th>angle thresold</th><th>good on</th><th>upscaled</th></tr>
   <tr><td>1080x1920</td><td>21</td><td>face</td><td>no</td></tr>
  </table>
  
